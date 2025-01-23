@@ -329,4 +329,9 @@ footer{
     .our-stories-card-container{
         grid-template-columns: 1fr;
     }
+
+    .footer-navbar{
+        flex-direction: column;
+        gap: 25px;
+    }
 }
