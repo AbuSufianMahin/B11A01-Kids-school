@@ -20,7 +20,11 @@ body{
     border: 4px dashed green;
 } */
 body{
-    background-image:  url("/assets/bg.png"), linear-gradient(180deg, white, #FEA301);   
+    background-image:  url("/assets/bg.png"), linear-gradient(180deg, white, rgba(254, 163, 1, 0.3));   
+}
+
+footer{
+    background-color: #01ACFD;
 }
 
 /* shared styles */
@@ -87,6 +91,11 @@ body{
 
     border: 1px solid black;
 }
+
+.primary-btn:hover{
+    color: black;
+    background-color: white;
+}
  
 .secondary-btn{
     font-family: "Quicksand", serif;
@@ -101,6 +110,13 @@ body{
     margin-bottom: 60px;
 }
 
+
+.footer-portion-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 32px;
+}
 
 
 /* curriculum section */
@@ -127,13 +143,19 @@ body{
     justify-content: center;
 }
 
+.school-pic-class{
+    max-width: 135px;
+    max-height: 120px;
+    margin: 0px auto;
+}
+
 .curriculum-card-title{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 32px 0px;
 }
 .curriculum-card-description{
-    height: 100px;
+    /* max-height: 100px; */
     font-size: 1rem;
     font-weight: 500;
     line-height: 28px;
@@ -225,6 +247,65 @@ body{
     margin-top: 60px;
 }
 
+/* footer navbar */
+
+.footer-navbar{
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0px auto;
+    gap: 170px;
+    padding:128px 140px;
+}
+
+.kids-edu-brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.kids-edu-brand>img{
+    max-width: 70px;
+    max-height: 80px;
+}
+
+.kids-education-footer-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.kids-education-footer-description{
+    font-size: 1.25rem;
+    padding: 30px 0px;
+    color: white;
+}
+
+
+.footer-section-card{
+    max-width: 350px;
+}
+
+.navbar-link-item{
+    margin-bottom: 20px;
+    font-weight: medium;
+    font-size: 1.25rem;
+    
+    list-style: none;
+    
+}
+
+.navbar-link-item>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600px;
+}
+
+.footer-section-card>a{
+    margin-right: 10px;
+}
+
 
 @media screen and (max-width: 576px) {
 
@@ -236,6 +317,7 @@ body{
 
     .curriculum-card-container{
         flex-direction: column;
+        align-items: center;
     }
 
 
