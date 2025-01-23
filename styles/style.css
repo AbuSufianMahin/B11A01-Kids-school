@@ -129,6 +129,8 @@ footer{
 }
 
 .curriculum-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -190,35 +192,34 @@ footer{
 
 .our-stories-card-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* background-color: white; */
-    gap:20px;
+    grid-template-columns: repeat(1, 2fr) repeat(2, 1fr);
+    gap: 50px;
     justify-content: space-evenly;
     max-width: 1440px;
     margin: 0px auto 80px;
-    /* border-radius: 16px; */
 }
 
 #featured-card{
     grid-row: span 2;
-    max-width: 550px;
-}
-
-.story-pic>image{
-    width: 100%;
-    /* border-radius: 16px 16px 0px 0px; */
+    /* max-width: 550px; */
 }
 
 .stories-card{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; */
-    border-radius: 16px;
-    max-width: 350px;
+    border-radius: 25px;
+    overflow: hidden;
     margin: 0px auto;
-    /* border: 1px solid #64C8FF; */
     background-color: white;
-    /* max-height: 640px; */
+}
+
+.story-pic>img{
+    width: 100%;
+}
+
+.story-card-details{
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    position: relative;
 }
 
 .story-date-btn{
@@ -226,9 +227,11 @@ footer{
     padding: 15px 20px;
     border-radius: 50px;
     border: none;
-    margin-top: -150px;
-    margin-left: -75px;
+    
+    left: 50px;
+    
 }
+
 
 .story-card-title{
     font-size: 1.5rem;
@@ -236,10 +239,6 @@ footer{
     text-align: left;
 }
 
-.story-card-details{
-    text-align: center;
-    padding: 60px 40px;
-}
 
 .story-card-description{
     font-size: 1rem;
@@ -316,8 +315,7 @@ footer{
     }
 
     .curriculum-card-container{
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
     }
 
 
