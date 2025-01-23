@@ -64,15 +64,6 @@
     
 }
 
-.common-description{
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 28px;
-    color: #808080;
-
-    margin-bottom: 32px;
-}
-
 /* curriculum section */
 
 .standard-curriculum{
@@ -86,19 +77,29 @@
 }
 
 .curriculum-card{
+    /* height: 500px; */
     padding: 50px;
     border-radius: 20px;
     text-align: center;
     width: 380px;
 
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .curriculum-card-title{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 32px 0px;
+}
+.curriculum-card-description{
+    height: 100px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 28px;
+    color: #808080;
+
+    margin-bottom: 32px;
 }
 
 .curriculum-navigation{
