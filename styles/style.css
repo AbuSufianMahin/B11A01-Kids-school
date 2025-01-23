@@ -15,10 +15,11 @@
 /* *{
     border: 2px dashed red;
 }
-
 body{
     border: 4px dashed green;
 } */
+
+
 body{
     background-image:  url("/assets/bg.png"), linear-gradient(180deg, white, rgba(254, 163, 1, 0.3));   
 }
@@ -48,6 +49,10 @@ footer{
 
 .blue-color{
     color: #64C8FF;
+}
+
+.sky-blue-color{
+    color: #01ACFD;
 }
 
 .purple-color{
@@ -110,7 +115,6 @@ footer{
     margin-bottom: 60px;
 }
 
-
 .footer-portion-title{
     font-size: 1.5rem;
     font-weight: bold;
@@ -118,6 +122,83 @@ footer{
     margin-bottom: 32px;
 }
 
+/* navigation bar (header) */
+
+.navigation-bar{
+    max-width: 1440px;
+    margin: 10px auto;
+    gap: 186px;
+    justify-content: space-between;
+    align-items: center;
+}
+.branding{
+    align-items: center;
+    gap: 15px;
+}
+
+.brand-name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-link-section{
+    gap: 32px;
+    justify-content: space-between;
+    
+}
+
+.header-link-item{
+    font-weight: medium;
+    font-size: 1.25rem;
+    
+    list-style: none;
+    
+}
+
+.header-link-item>a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+    font-weight: 600px;
+}
+
+.contact-btn{
+    background-color: #FEA301;
+    font-family: "Quicksand", serif;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 10px 60px;
+    border-radius: 12px;
+
+    border: 1px solid #FEA301;
+}
+
+.collapsed-menu{
+    display: none;
+}
+
+/* banner section */
+.banner-section{
+    max-width: 1440px;
+    margin: 0px auto;
+    gap: 50px;
+    align-items: center;
+}
+.banner-section>img{
+    width: 100%;
+}
+
+.banner-description{
+    font-size: 20px;
+    margin: 24px 0px;
+}
+
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 60px;
+}
 
 /* curriculum section */
 
@@ -218,8 +299,6 @@ footer{
 .story-card-details{
     text-align: center;
     padding: 30px;
-    position: relative;
-    position: relative;
 }
 
 .story-date-btn{
@@ -285,7 +364,7 @@ footer{
     max-width: 350px;
 }
 
-.navbar-link-item{
+.footer-link-item{
     margin-bottom: 20px;
     font-weight: medium;
     font-size: 1.25rem;
@@ -294,7 +373,7 @@ footer{
     
 }
 
-.navbar-link-item>a{
+.footer-link-item>a{
     text-decoration: none;
     color: white;
     font-size: 1.25rem;
@@ -307,6 +386,12 @@ footer{
 
 
 @media screen and (max-width: 576px) {
+
+    /* banner */
+    .banner-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 
     /* curriculum */
     .section-title{
@@ -325,11 +410,19 @@ footer{
     }
 
     .our-stories-card-container{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
     .footer-navbar{
         flex-direction: column;
         gap: 25px;
+        margin: 5px auto;  
+        padding: 60px 20px;
+    }
+    .our-stories-section{
+        /* margin-top: 15px; */
+        max-width: 358px;
+        margin: 0px auto;
     }
 }
