@@ -240,7 +240,11 @@ body{
 
 
     /* our stories */
-    /* #featured-card{
+    #featured-card{
         display: none;
-    } */
+    }
+
+    .our-stories-card-container{
+        grid-template-columns: 1fr;
+    }
 }
